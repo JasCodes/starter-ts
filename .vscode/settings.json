@@ -1,0 +1,16 @@
+{
+    "typescript.validate.enable": true,
+    "typescript.autoClosingTags": true,
+    "json.format.enable": true,
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "saveAndRun": {
+        "commands": [
+            {
+                "cmd": "node_modules/.bin/tslint-fmt ${file}",
+                "match": "\\.(ts|tsx)",
+                "silent": true,
+                "isAsync": false
+            }
+        ]
+    }
+}
